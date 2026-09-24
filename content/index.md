@@ -4,29 +4,7 @@ seo:
   description: Multi-tenant API reference for the sportsbook platform backend services.
 ---
 
-::u-page-hero{class="dark:bg-gradient-to-b from-neutral-900 to-neutral-950"}
----
-orientation: horizontal
----
-#top
-:hero-background
 
-#title
-Sportsbook Platform [API Reference]{.text-primary}.
-
-#description
-Multi-tenant backend API contracts for the sportsbook frontend — endpoints, path/query parameters, headers, and precise request/response payloads for backend implementation.
-
-#links
-  :::u-button
-  ---
-  to: /api-reference/fixture-sports
-  size: xl
-  trailing-icon: i-lucide-arrow-right
-  ---
-  Browse the API reference
-  :::
-::
 
 ::u-page-section
 #title
@@ -37,6 +15,15 @@ Every category of endpoint used by the sportsbook platform, grouped by service. 
 
 #default
   :::card-group
+    :::card
+    ---
+    icon: i-lucide-user-check
+    title: Identity
+    to: /api-reference/identity
+    ---
+    Login, registration, OTP, password reset, device registration, self-exclusion and account management.
+    :::
+
     :::card
     ---
     icon: i-lucide-goal
@@ -75,15 +62,6 @@ Every category of endpoint used by the sportsbook platform, grouped by service. 
 
     :::card
     ---
-    icon: i-lucide-user-check
-    title: Identity
-    to: /api-reference/identity
-    ---
-    Login, registration, OTP, password reset, device registration, self-exclusion and account management.
-    :::
-
-    :::card
-    ---
     icon: i-lucide-newspaper
     title: CMS
     to: /api-reference/cms
@@ -92,7 +70,7 @@ Every category of endpoint used by the sportsbook platform, grouped by service. 
     :::
 
     :::card
-    ---
+    --- 
     icon: i-lucide-trophy
     title: Jackpot / Correct Score
     to: /api-reference/jackpot-correct-score
@@ -100,36 +78,5 @@ Every category of endpoint used by the sportsbook platform, grouped by service. 
     Categories, jackpots, results, bet placement/update, bet history and pre-bet eligibility, across two parallel services.
     :::
 
-    :::card
-    ---
-    icon: i-lucide-server-cog
-    title: Internal Nuxt API
-    ---
-    Server routes internal to the frontend, e.g. country detection. *(coming soon)*
-    :::
-
-    :::card
-    ---
-    icon: i-lucide-archive
-    title: Unused / Configured Only
-    ---
-    Endpoints configured in runtime environment variables but not directly called by frontend source. *(coming soon)*
-    :::
-
-    :::card
-    ---
-    icon: i-lucide-share-2
-    title: Third-Party Endpoints
-    ---
-    IP detection, BetGames, bet builder, notifications and sports widgets. *(coming soon)*
-    :::
-
-    :::card
-    ---
-    icon: i-lucide-radio-tower
-    title: Real-Time MQTT
-    ---
-    Real-time odds/event updates over MQTT. *(coming soon)*
-    :::
   :::
 ::
