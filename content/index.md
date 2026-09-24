@@ -15,7 +15,7 @@ orientation: horizontal
 Sportsbook Platform [API Reference]{.text-primary}.
 
 #description
-Multi-tenant backend API contracts consumed by the sportsbook frontend — endpoints, path/query parameters, headers, and precise request/response payloads for backend implementation.
+Multi-tenant backend API contracts for the sportsbook frontend — endpoints, path/query parameters, headers, and precise request/response payloads for backend implementation.
 
 #links
   :::u-button
